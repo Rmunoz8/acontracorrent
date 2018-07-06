@@ -14,7 +14,7 @@ class App extends Component {
   constructor(){
     super();
     this.state={
-      seleccionado:'#op1',
+      seleccionado:'#principal',
       scroll:0
     }
 
@@ -33,13 +33,13 @@ class App extends Component {
     let contenido;
     
     switch (this.state.seleccionado) {
-      case '#op1':
+      case '#principal':
         contenido = this.montarPrincipal();
         break;
       case '#futbol':
         contenido = this.montarFutbol();
         break;
-      case '#voluntarios':
+      case '#colabora':
         contenido = this.mostrarVoluntarios();
         break;
     
@@ -69,7 +69,9 @@ class App extends Component {
     this.setState({scroll: 0});
   }
 
-  changeContenido(valor){   
+  changeContenido(valor){  
+    console.log(`Contenido${valor}`);
+     
     this.subirScroll(); 
     this.setState({seleccionado:valor});
   }

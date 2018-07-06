@@ -96,7 +96,9 @@ class Torbar extends Component {
             </div>        */}
         </div>
         <div className='zonaCarousel'><Carrusel /></div>   
-        <Menu accionMenu={this.accionMenu} />
+        <Menu changeNav={(select)=>{
+          this.changeNav(select)
+        }} accionMenu={this.accionMenu} />
       </div>
     );
   }
@@ -137,15 +139,17 @@ class Torbar extends Component {
   }
 
   changeNav(selec){
-        let anterior = document.querySelector(this.state.seleccionado);
-            anterior.classList.remove('btnNavSelect');
-            anterior.classList.add('btnNav');
+        console.log(`Select!! Funcionas->${selec}`);
+        
+        // let anterior = document.querySelector(this.state.seleccionado);
+        //     anterior.classList.remove('btnNavSelect');
+        //     anterior.classList.add('btnNav');
 
-        let nuevo = document.querySelector(selec);
-            nuevo.classList.remove('btnNav');
-            nuevo.classList.add('btnNavSelect');
+        // let nuevo = document.querySelector(selec);
+        //     nuevo.classList.remove('btnNav');
+        //     nuevo.classList.add('btnNavSelect');
 
-        this.setState({seleccionado: selec});      
+        // this.setState({seleccionado: selec});      
         this.props.contenido(selec);  
   }
 

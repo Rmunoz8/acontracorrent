@@ -108,7 +108,7 @@
 }
 
 .navegacion{
-    width: 90%;
+    width: 100%;
     height: 60%;
     /* background-color: aquamarine; */
     display: flex;  
@@ -190,20 +190,41 @@
 }
 
 .zonaOpcionesMenu{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    /* background-color: #e88697; */
 }
 
 .zonaOptDropMenu{
+    opacity: 0;
     height: auto;
-    width: 50%;
+    width: 30%;
     padding: 30px;
     background-color:#fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: 0.5s;
+}
+
+.selectLineMenu{
+    /* position: fixed; */
+    width: 2px;
+    height: 244px;
+    background-color: var(--auxiliarColor);
+    display: flex;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.identSelectMenu{
+    margin-top: 0px;
+    width: 2px;
+    height: 61px;
+    background-color: var(--mainColor);
+    align-self: flex-start;
+    transition: 0.3s;
 }
