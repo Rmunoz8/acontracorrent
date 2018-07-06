@@ -17,18 +17,29 @@ class Principal extends Component {
       <div className="marcoPrincipal">
         <div className='infoInicial'> A Contracorrent Esport Adaptat somos una asociación sin ánimo de lucro, que nace con el objetivo de promover la práctica del deporte, el desarrollo personal, la calidad de vida e inclusión social de personas con diversidad funcional o con riesgo de tenerla, a través de incentivary fomentar la práctica deportiva de una forma adaptada al deportista, y aprovechar los beneficios de la actividad física en la rehabilitación de niños con daño cerebral y otros problemas neurológicos.</div>
         <div className='zonaVista'>
-          <div className='vision'>
-            <div className='misionTitulo'>Visión!</div>
-            <div className='misionText'> Llegar  al  máximo  número  de  personas  con  alguna  alteración  motora  pueda  disfrutar  de  la  práctica  deportiva.</div>
+
+          <div className='marcoVision'>
+            <div className='vision'>
+              <div className='misionTitulo'>Visión!</div>
+              <div className='misionText'> Llegar  al  máximo  número  de  personas  con  alguna  alteración  motora  pueda  disfrutar  de  la  práctica  deportiva.</div>
+            </div>
           </div>
-          <div className='mision'>
-            <div className='misionTitulo'>MISIÓN!</div>
-            <div className='misionText'>Promover  la  práctica  del  deporte  y  realizar  actividades  deportivas  adaptadas  a  las  capacidades  de  los  participantes.</div>
-          </div>
-          <div className='valores'>
-            <div className='misionTitulo'>Valores!</div>
-            <div className='misionText'>  Los  valores  que  nos  caracterizan  son:  la  inclusión  en  el  deporte,  trabajo  en  equipo,  responsabilidad y humildad.</div>
-          </div>
+
+        <div className='marcoMision'>
+            <div className='mision'>
+              <div className='misionTitulo'>MISIÓN!</div>
+              <div className='misionText'>Promover  la  práctica  del  deporte  y  realizar  actividades  deportivas  adaptadas  a  las  capacidades  de  los  participantes.</div>
+            </div>
+        </div>
+
+        <div className='marcoValores'>
+            <div className='valores'>
+              <div className='misionTitulo'>Valores!</div>
+              <div className='misionText'>  Los  valores  que  nos  caracterizan  son:  la  inclusión  en  el  deporte,  trabajo  en  equipo,  responsabilidad y humildad.</div>
+            </div>
+        </div>
+
+
         </div>
         <div className='zonaPosts'>
           <div className='tituloZonaPost'><div className='hr' ></div>NOVEDADES<div className='hr' ></div></div>
