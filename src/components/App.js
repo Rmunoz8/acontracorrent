@@ -6,6 +6,7 @@ import Footer from './Footer';
 import Futbol from './Futbol';
 import Voluntarios from './Voluntarios';
 import SubirScroll from './SubirScroll';
+import Socios from './Socios';
 
 window.onscroll = function (e) {
 } 
@@ -18,6 +19,7 @@ class App extends Component {
       scroll:0
     }
 
+    this.mostrarSocios = this.mostrarSocios.bind(this);
     this.cambioPantalla = this.cambioPantalla.bind(this);
     this.subirScroll = this.subirScroll.bind(this);
     this.mostrarVoluntarios = this.mostrarVoluntarios.bind(this);
@@ -39,8 +41,11 @@ class App extends Component {
       case '#futbol':
         contenido = this.montarFutbol();
         break;
-      case '#colabora':
+      case '#voluntario':
         contenido = this.mostrarVoluntarios();
+        break;
+      case '#socio':
+        contenido = this.mostrarSocios();
         break;
     
       default:
@@ -85,6 +90,10 @@ class App extends Component {
 
   mostrarVoluntarios(){
     return <Voluntarios/>
+  }
+
+  mostrarSocios(){
+    return <Socios/>
   }
 
   eventScroll(){

@@ -47,8 +47,14 @@ class Menu extends Component {
             case 'colabora':
                 
                 contenidoDropBox = <div className='zonaOptDropMenu'>
-                                        <div className='optDropActividades'><div className='franjaMenu'>VOLUNTARIADO</div></div>
-                                        <div className='optDropActividades'><div className='franjaMenu'>HAZTE.SOCIO!</div></div>
+                                        <div className='optDropActividades' onClick={() => {
+                                            this.optSeleccionada('voluntario');
+                                        }} ><div className='franjaMenu'>VOLUNTARIADO</div></div>
+                                        <div className='optDropActividades'
+                                            onClick={() => {
+                                                this.optSeleccionada('socio');
+                                            }}
+                                        ><div className='franjaMenu'>HAZTE.SOCIO!</div></div>
                                     </div>
 
                 break;

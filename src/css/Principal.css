@@ -24,7 +24,7 @@
 .infoInicialVoluntario{
     margin-top: 40px;
     width: 50%;
-    min-width: 550px;
+    /* min-width: 550px; */
     padding: 10px;
     text-align: center;
     font-family: 'Amatic SC',
@@ -109,3 +109,68 @@
     /* background-color: yellowgreen; */
 
 }
+
+.zonaVista{
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px; 
+    width: 100%;
+    background-color: #e0e0e0;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mision,
+.vision,
+.valores{
+    width: 360px;
+    height: 360px;
+    padding: 20px;
+    color: #fff;
+    background-color: var(--auxiliarColor);
+    font-family: 'Amatic SC';
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vision{
+    background-color: var(--secondColor);
+    color: var(--auxiliarColor);
+}
+
+.valores{
+    background-color: var(--mainColor);
+    color: var(--auxiliarColor);
+}
+
+.misionTitulo{
+    font-size: 4em;
+    height: 0%;
+    width: 80%;
+    /* background-color: rgb(140, 0, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1d1d1d;
+    font-weight: bolder;
+}
+
+.misionText{
+    margin-top: 30px;
+    font-size: 2.5em;
+    height: 100%;
+    width: 80%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+
+}
+
+

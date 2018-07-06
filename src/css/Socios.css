@@ -1,0 +1,61 @@
+.marcoVerde,
+.marcoRosa{
+    height: 350px;
+    width: 350px;
+    background-color: var(--mainColor);
+    display: flex;
+    /* align-self: flex-start; */
+    color: var(--auxColor);
+    font-family: 'Amatic SC';
+    font-size: 3em;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.marcoRosa{
+    background-color: var(--secondColor);
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+}
+
+.tituloMarcoVerde{
+    height: 0%;
+    margin-top: -90px;
+    font-weight: bolder;
+    font-size: 3.5em;
+    color: black;
+}
+
+.infoMarcoVerde{
+    width: 100%;
+    height: 80%;
+    font-size: 2em;
+    /* background-color: rgb(108, 143, 143); */
+    display: flex;
+    align-items: flex-end;
+}
+
+.resaltarMarcoVerde{
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+
+.resaltarMarcoRosa{
+    font-size: 5em;
+    font-weight: bolder;
+    color: black;
+}
+
+.zonaMarcosSocios{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.resaltarInformateSocio{
+    font-size: 4em;
+    font-family: 'Amatic SC';
+}
