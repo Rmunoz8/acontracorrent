@@ -1,0 +1,110 @@
+.marcoVoluntarios{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.imagenesLocura{
+    background: url('../assets/img/locura.png') no-repeat left;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divAux{
+    height: 600px;
+}
+
+.voluntariosParalax{
+    /* The image used */
+    background-image: url("../assets/img/carrusel4.jpeg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+span{
+    font-weight: bold;
+    color: var(--auxiliarColor);
+    cursor: pointer;
+}
+
+.resaltar{
+    margin-top: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.contenedorTexto{
+    margin-top: 15px;
+    height: auto;
+    width: 40%;
+      -webkit-transform: skewY(5deg);
+  -moz-transform: skewY(5deg);
+  -ms-transform: skewY(5deg);
+  -o-transform: skewY(5deg);
+  transform: skewY(5deg);
+}
+
+/* .infoInicialVoluntario{
+    margin-top: 40px;
+    width: 100%;
+    min-width: 550px;
+    height: calc(auto + 100px);
+    padding: 10px;
+    text-align: center;
+    font-family: 'Amatic SC',
+    cursive;
+    font-size: 2em;
+    font-weight: 500;
+    background-color: var(--auxiliarColor);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+      -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+  transform: skewY(-5deg);
+} */
+
+.infoInicialVoluntario{
+    margin-top: 0px;
+    justify-content: center;
+    align-self: center;
+}
+
+.tituloVoluntario{
+    width: 100%;
+    font-size: 2.5em;
+    letter-spacing: 10px;
+    display: flex;
+    margin-bottom: 75px;
+    margin-top: 75px;
+    align-self: center;
+    justify-content: center;
+}
+
+.textVoluntarios{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}

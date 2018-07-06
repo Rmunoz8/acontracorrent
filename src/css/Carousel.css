@@ -1,0 +1,136 @@
+.marcoCarusel{
+    width: 100%;
+    height: 500px;
+}
+
+
+.slide1{
+    background: url('../assets/img/carrusel1.jpeg') no-repeat center;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+.slide2{
+    background: url('../assets/img/carrusel2.jpeg') no-repeat center;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.slide3{
+    background: url('../assets/img/carrusel3.jpeg') no-repeat center;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+.slide4{
+    background: url('../assets/img/carrusel4.jpeg') no-repeat center;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    transition: 1s;
+}
+
+.marcoSlider{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: var(--overlay);
+    z-index: 10;  
+}
+
+.leftArrow,
+.rightArrow {
+    height: 100%;
+    width: 50%;
+    background-color: var(--overlay);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.rightArrow{
+    justify-content: flex-end;
+}
+
+.iconLeftArrow {
+    height: 50px;
+    width: 50px;
+    background: url('../assets/icons/left-arrow.svg') no-repeat left;
+    background-size: 50px;
+    transition: 0.3s;
+}
+
+.iconLeftArrow:hover,
+.iconRightArrow:hover{
+    height: 60px;
+    width: 60px;
+    background-size: 60px;
+}
+
+.iconRightArrow{
+    height: 50px;
+    width: 50px;
+    background: url('../assets/icons/right-arrow.svg') no-repeat right;
+    background-size: 50px;
+    transition: 0.3s;    
+}
+
+.marcadores{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.marcadorBtn{
+    height: 20px;
+    width: 20px;
+    background-color: var(--auxiliarColor);
+    border-radius: 50%;
+    margin: 2.5px;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marcadorBtn:hover{
+    transform: scale(1.1, 1.1);
+}
+
+.marcadorBtn:hover > .btnContenido{
+    height: 100%;
+    width: 100%;
+}
+
+.btnContenido{
+    height: 0%;
+    width: 0%;
+    border-radius: 50%;
+    transition: 0.3s;   
+    background-color: var(--mainColor);     
+}
+
+.select{
+    height: 100%;
+    width: 100%;
+}

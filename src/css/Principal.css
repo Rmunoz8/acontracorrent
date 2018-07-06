@@ -1,0 +1,111 @@
+.marcoPrincipal{
+    height: auto;
+    width: 100%;
+    /* overflow-y: scroll; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.zonaPosts{
+    margin-top: 50px;
+    width: 95%;
+    height: auto;
+    /* background-color: aqua; */
+    margin-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoInicial,
+.infoInicialVoluntario{
+    margin-top: 40px;
+    width: 50%;
+    min-width: 550px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Amatic SC',
+    cursive;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.post{
+    height: 300px;
+    width: 500px;
+    background: url('../assets/img/noticia1.jpeg') no-repeat center;
+    background-size: 100%;
+}
+.post2{
+    height: 345px;
+    width: 500px;
+    background: url('../assets/img/notifica2.jpeg') no-repeat center;
+    background-size: 100%;
+}
+
+.marcoPosts{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.tituloZonaPost{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    /* background-color: yellowgreen; */
+    font-size: 2.5em;
+    letter-spacing: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: var(--auxiliarColor);
+}
+
+.overlayPost{
+    padding: 5px;
+    height: calc(100% - 10px);
+    width: calc(100% - 10px);
+    background-color: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: 0.3s;
+    color: #fff;
+}
+.overlayPost:hover{
+    background-color: var(--overlay);
+}
+
+.bloqueInfoPost{
+    margin-top: 15px;
+    transition: 0.3s;
+    font-size: 1.2em;        
+}
+
+.tituloPost{
+    letter-spacing: 10px;
+    transition: 0.3s;
+    font-size: 1.5em;    
+}
+
+.hr{
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 90%;
+    border-bottom: 2px solid #636363;
+}
+
+.zonaContacto{
+    width: 80%;
+    height: auto;
+    /* background-color: yellowgreen; */
+
+}

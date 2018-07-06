@@ -1,0 +1,256 @@
+.topBar{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+      0 6px 6px rgba(0, 0, 0, 0.23); */
+    z-index: 20;
+    transition: 0.3s;
+}
+.topBarN{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right bottom, #636363, #525252, #424242, #323232, #232323);
+    position: fixed;
+    top: 0px;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+      0 6px 6px rgba(0, 0, 0, 0.23); */
+    z-index: 20;
+    transition: 0.3s;
+}
+
+.tituloTopBar {
+    background: url('../assets/img/Logo_Blanc_A_contracorrent.png') center no-repeat;
+    background-size: 350px;
+    height: 100%;
+    width: 350px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.tituloTopBarN{
+    background: url('../assets/img/Logo_Principal_A_contracorrent.png') center no-repeat;
+    background-size: 350px;
+    height: 100%;
+    width: 350px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.marcoBtnNav{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #fff;
+}
+.marcoBtnNavN{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--secondColor);
+}
+
+.btnNav,
+.btnNavSelect,
+.btnNavDesplegable {
+    height: 100%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.3em;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.btnNav:hover{
+    background-color: var(--auxiliarColorHover);
+}
+
+
+.btnNavSelect{
+    padding-top: 12px;
+    border-bottom: solid 2px var(--mainColor);
+    box-sizing: border-box;
+}
+
+
+.twitter{
+    background: url('../assets/icons/twitter-logo-buttonGreen.svg') center no-repeat;    
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+}
+.twitter:hover{
+    transform: scale(1.1, 1.1);    
+    background: url('../assets/icons/twitter-logo-buttonRosa.svg') center no-repeat;    
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.facebook{
+    background: url('../assets/icons/facebook-logo-buttoGreen.svg') center no-repeat;    
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+}
+.facebook:hover{
+    transform: scale(1.1, 1.1);    
+    background: url('../assets/icons/facebook-logo-buttonRosa.svg') center no-repeat;    
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    cursor: pointer;
+    margin: 5px;
+}
+.instagram{
+    background: url('../assets/icons/instagram-logoGreen.svg') center no-repeat;    
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.instagram:hover {
+    transform: scale(1.1, 1.1);
+    background: url('../assets/icons/instagram-logoRosa.svg') center no-repeat;    
+    height: 50px;
+    width: 50px;
+    background-size: 50px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+.dropBox{
+    left: calc(100% - 300px);
+    top: 100px;
+    height: 0;
+    width: 150px;
+    z-index: 30;
+    position: fixed;
+    background-color: none;
+    /* min-width: 160px; */
+    transition: 0.5s;
+}
+.dropBoxN{
+    left: calc(100% - 300px);
+    top: 100px;
+    height: 0;
+    width: 150px;
+    z-index: 30;
+    position: fixed;
+    background-image: linear-gradient(to right bottom, #636363, #525252, #424242, #323232, #232323);
+    transition: 0.5s;
+}
+
+.optDropBox{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0em;
+    transition: 0.3s;
+}
+
+.optDropBox:hover{
+    padding-top: -2px;
+    border-bottom: solid 2px var(--mainColor);
+    box-sizing: border-box;
+    background-color: var(--auxiliarColorHover);
+
+}
+
+.zonaCarousel{
+    position: relative;
+}
+
+.marcoOptDropBox{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btnNavDesplegable:hover > .dropBox{
+    display: block;
+    height: 50px;
+    font-size: 1.5em;    
+}
+.btnNavDesplegable:hover > .dropBoxN{
+    display: block;
+    height: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-size: 1.5em;    
+}
+
+.dropBox:hover{
+    display: block;
+    height: 150px;
+    font-size: 0.5em;
+}
+.dropBoxN:hover{
+    display: block;
+    height: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    font-size: 0.5em;
+}
+.btnNavDesplegable:hover > .dropBox > .marcoOptDropBox > .optDropBox{
+    font-size: 0.5em;    
+}
+
+.dropBox:hover > .marcoOptDropBox > .optDropBox{
+    font-size: 0.5em;
+}
+.btnNavDesplegable:hover > .dropBoxN > .marcoOptDropBox > .optDropBox{
+    font-size: 0.5em;    
+}
+
+.dropBoxN:hover > .marcoOptDropBox > .optDropBox{
+    font-size: 0.5em;
+}
+
+.menuHamb{
+    margin-right: 50px;
+    height: 50px;
+    width: 50px;
+    /* background-color: red; */
+    background: url(../assets/icons/menuBlanco.svg) center no-repeat;
+    background-size: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menuHamb:hover{
+    transform: scale(1.1);
+}
+
+

@@ -1,0 +1,45 @@
+.marcoFutbol{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    margin-top: 100px;
+    margin-bottom: 300px;
+}
+
+.tituloFutbol{
+    width: 100%;
+    font-size: 2.5em;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 75px;
+    margin-top: 75px;
+}
+
+.escudoFutbol{
+    margin-top: 25px;
+    /* background-color: yellowgreen; */
+    background: url('../assets/img/Negre_Escut_Fútbol_A_contracorrent.png') no-repeat center;
+    background-size: 100%;
+    height: 300px;
+    width: 300px;
+}
+
+.futbolParalax{
+    /* The image used */
+    background-image: url("../assets/img/carrusel3.jpeg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+    width: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+

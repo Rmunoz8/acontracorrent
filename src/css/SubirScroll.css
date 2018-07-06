@@ -1,0 +1,23 @@
+.marcoScroll{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+.scroll{
+    height: 100%;
+    width: 100%;
+    background: url('../assets/icons/subir.svg') no-repeat center;
+    background-size: 50px;
+    transition: 1s;
+    transform: rotateX(0deg);
+}
+
+.marcoScroll:hover > .scroll{
+    background: url('../assets/icons/subirPink.svg') no-repeat center;
+    background-size: 50px;
+    transform: rotateX(380deg);
+    color: #e88697;
+}
