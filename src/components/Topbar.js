@@ -31,9 +31,6 @@ class Torbar extends Component {
     try {
       let topBar = document.querySelector('#topBar');
       let tituloTopBar = document.querySelector('#tituloTopBar');
-      let twitter = document.querySelector('#twitter');
-      let facebook = document.querySelector('#facebook');
-      let instagram = document.querySelector('#instagram');
       let marcoBotones = document.querySelector('#marcoBtnNav');
       let dropBox = document.querySelector('#dropBox');
       
@@ -75,25 +72,8 @@ class Torbar extends Component {
       <div>
         <ReactTooltip place="bottom" type="dark" effect="solid" />
         <div id='topBar' className="topBar">
-          <div id='tituloTopBar' className='tituloTopBar' onClick={()=>{this.changeNav("#op1")}} ></div>
-            {/* <div className='redesSociales'>
-              <div onClick={this.toTwitter} data-tip="Twitter" id='twitter' className='twitter'></div>
-              <div onClick={this.toFacebook} data-tip="Facebook" id='facebook' className='facebook'></div>
-              <div onClick={this.toInstagram} data-tip="Instagram" id='instagram' className='instagram'></div>
-            </div> */}
-
+          <div id='tituloTopBar' className='tituloTopBar' onClick={()=>{this.changeNav("#principal")}} ></div>
           <div id='marcoBtnNav' onClick={this.accionMenu} className='menuHamb'></div>       
-
-            {/* <div id='marcoBtnNav' className='marcoBtnNav'>
-              <div id='op1' onClick={()=>{this.changeNav("#op1")}} className='btnNavSelect'>INICIO</div>
-              <div id='op2' className='btnNavDesplegable'>ACTIVIDADES
-                <div id='dropBox' className='dropBox'>
-                    <div className='marcoOptDropBox'>
-                  <div className='optDropBox' id='futbol' onClick={() => { this.changeNav("#futbol") }}>Fútbol Adaptado</div>
-                    </div>
-              </div></div>
-              <div id='op3' onClick={()=>{this.changeNav("#op3")}} className='btnNav'>CONTACTO</div>
-            </div>        */}
         </div>
         <div className='zonaCarousel'><Carrusel /></div>   
         <Menu changeNav={(select)=>{
@@ -138,18 +118,7 @@ class Torbar extends Component {
 
   }
 
-  changeNav(selec){
-        console.log(`Select!! Funcionas->${selec}`);
-        
-        // let anterior = document.querySelector(this.state.seleccionado);
-        //     anterior.classList.remove('btnNavSelect');
-        //     anterior.classList.add('btnNav');
-
-        // let nuevo = document.querySelector(selec);
-        //     nuevo.classList.remove('btnNav');
-        //     nuevo.classList.add('btnNavSelect');
-
-        // this.setState({seleccionado: selec});      
+  changeNav(selec){    
         this.props.contenido(selec);  
   }
 

@@ -7,6 +7,10 @@ import Futbol from './Futbol';
 import Voluntarios from './Voluntarios';
 import SubirScroll from './SubirScroll';
 import Socios from './Socios';
+import Contacto from './Contacto';
+import Twitter from './Twitter';
+import Facebook from './Facebook';
+import Instagram from './Instagram';
 
 window.onscroll = function (e) {
 } 
@@ -19,6 +23,7 @@ class App extends Component {
       scroll:0
     }
 
+    this.mostrarContacto = this.mostrarContacto.bind(this);
     this.mostrarSocios = this.mostrarSocios.bind(this);
     this.cambioPantalla = this.cambioPantalla.bind(this);
     this.subirScroll = this.subirScroll.bind(this);
@@ -47,8 +52,13 @@ class App extends Component {
       case '#socio':
         contenido = this.mostrarSocios();
         break;
+
+      case '#contactanos':
+        contenido = this.mostrarContacto();
+        break;
     
       default:
+        contenido = this.montarPrincipal();
         break;
     }    
 
@@ -56,9 +66,12 @@ class App extends Component {
       <div onResize={this.cambioPantalla} className="App" onScroll={this.eventScroll} >
         <Topbar scroll={this.state.scroll} contenido={this.changeContenido}/>
         {contenido}
-        <SubirScroll subirScroll={this.subirScroll}/>
+        <SubirScroll scroll={this.state.scroll} subirScroll={this.subirScroll}/>
         <Footer/>
         <div id='voluntarios' ></div>
+        <Twitter/>
+        <Facebook/>
+        <Instagram/>
       </div>
     );
   }
@@ -90,6 +103,10 @@ class App extends Component {
 
   mostrarVoluntarios(){
     return <Voluntarios/>
+  }
+
+  mostrarContacto(){
+    return <Contacto/>
   }
 
   mostrarSocios(){

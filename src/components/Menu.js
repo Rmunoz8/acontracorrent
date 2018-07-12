@@ -16,19 +16,6 @@ class Menu extends Component {
     }
 
     render() {
-
-        // try {
-        //     var dropBox = document.querySelector('.zonaOptDropMenu');
-            
-        //     if (this.state.dropBoxSeleccionado) {
-        //         dropBox.style.opacity = '0';
-        //     } else {
-        //         dropBox.style.opacity = '1';                
-        //     }
-
-        // } catch (error) {
-            
-        // };
         
         let contenidoDropBox;
 
@@ -38,9 +25,10 @@ class Menu extends Component {
                 contenidoDropBox = <div className='zonaOptDropMenu'>
                                          <div className='optDropActividades' onClick={()=>{
                                             this.optSeleccionada('futbol');
-                                         }} ><div className='franjaMenu'>FÚTBOL</div></div>
-                                         <div className='optDropActividades'><div className='franjaMenu'>ESCALADA</div></div>
-                                         <div className='optDropActividades'><div className='franjaMenu'>JUDO</div></div>
+                                            }} >
+                                            <div className='franjaMenu'>FRAME.FOOTBALL</div></div>
+                                         {/* <div className='optDropActividades'><div className='franjaMenu'>ESCALADA</div></div>
+                                         <div className='optDropActividades'><div className='franjaMenu'>JUDO</div></div> */}
                                     </div>
 
                 break;
@@ -93,13 +81,6 @@ class Menu extends Component {
                             this.optSeleccionada('contactanos');
                         }} ><div className='optNavTitulo' >CONTÁCTANOS</div></div>
                     </div>
-                    {/* <div className='zonaOptDropMenu'>
-                        <div className='optDropActividades'><div className='franjaMenu'>VOLUNTARIADO</div></div>
-                        <div className='optDropActividades'><div className='franjaMenu'>HAZTE SOCIO!</div></div>
-                        <div className='optDropActividades'><div className='franjaMenu'>FÚTBOL</div></div>
-                        <div className='optDropActividades'><div className='franjaMenu'>ESCALADA</div></div>
-                        <div className='optDropActividades'><div className='franjaMenu'>JUDO</div></div>
-                    </div> */}
                     {contenidoDropBox}
                 </div>
                 <div className='redesSociales'>
@@ -119,7 +100,6 @@ class Menu extends Component {
         this.props.changeNav(`#${select}`);
         switch (select) {
             case 'principal':
-                console.log('Principal');
                 seleccionador.style.marginTop = '0px';
                 var dropBox = document.querySelector('.zonaOptDropMenu').style.opacity = '0';
                 setTimeout(() => {
@@ -127,19 +107,16 @@ class Menu extends Component {
                 }, 500);
                 break;
             case 'actividades':
-                console.log('actividades');
                 seleccionador.style.marginTop = '61px';
                 var dropBox = document.querySelector('.zonaOptDropMenu').style.opacity = '1';
 
                 break;
             case 'colabora':
-                console.log('colabora');
                 seleccionador.style.marginTop = '122px';
                 var dropBox = document.querySelector('.zonaOptDropMenu').style.opacity = '1';
                 
                 break;
             case 'contactanos':
-                console.log('contactanos');
                 seleccionador.style.marginTop = '183px';
                 var dropBox = document.querySelector('.zonaOptDropMenu').style.opacity = '0';
                 setTimeout(() => {

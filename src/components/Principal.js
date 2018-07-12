@@ -49,35 +49,17 @@ class Principal extends Component {
               </div>
             </div>
           </div>
-
-
-
-        {/* <div className='marcoMision'>
-            <div className='mision'>
-              <div className='misionTitulo'>MISIÓN!</div>
-              <div className='misionText'>Promover  la  práctica  del  deporte  y  realizar  actividades  deportivas  adaptadas  a  las  capacidades  de  los  participantes.</div>
-            </div>
-        </div>
-
-        <div className='marcoValores'>
-            <div className='valores'>
-              <div className='misionTitulo'>Valores!</div>
-              <div className='misionText'>  Los  valores  que  nos  caracterizan  son:  la  inclusión  en  el  deporte,  trabajo  en  equipo,  responsabilidad y humildad.</div>
-            </div>
-        </div> */}
-
-
         </div>
         <div className='zonaPosts'>
           <div className='tituloZonaPost'><div className='hr' ></div>NOVEDADES<div className='hr' ></div></div>
           <div className='marcoPosts'>
-            <div onClick={()=>{this.changeNav('#voluntarios', '#op1')}} className='post'>
+            <div onClick={() => { this.changeNav('#voluntario', '#op1')}} className='post'>
               <div className='overlayPost'>
                 <div className='tituloPost'>COLABORA CON NOSOTROS</div>
                 <div className='bloqueInfoPost'>Buscamos personas maravillosas ¿Quieres unirte a nuestro proyecto?</div>
               </div>
             </div>
-            <div onClick={() => { this.changeNav("#futbol", '#op1') }} className='post2'>
+            <div onClick={() => { this.changeNav("#futbol", '#principal') }} className='post2'>
               <div className='overlayPost'>
               </div>
             </div>
@@ -88,17 +70,12 @@ class Principal extends Component {
   }
 
   changeNav(selec, actual) {
-    
-    let anterior = document.querySelector(actual);
-    anterior.classList.remove('btnNavSelect');
-    anterior.classList.add('btnNav');
-
-    let nuevo = document.querySelector(selec);
-    nuevo.classList.remove('btnNav');
-    nuevo.classList.add('btnNavSelect');
-
-    this.setState({ seleccionado: selec });
-    this.props.contenido(selec);
+    try {
+      this.setState({ seleccionado: selec });
+      this.props.contenido(selec);
+    } catch (error) {
+      console.log(error);
+    }
   }
 
 }

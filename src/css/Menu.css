@@ -86,10 +86,10 @@
 }
 .logoManu{
     /* margin-right: 50px; */
-    height: 100px;
-    width:100px;
+    height: 150px;
+    width:150px;
     background: url(../assets/img/logoAsocioacion.png) no-repeat center;
-    background-size: 100px;
+    background-size: 150px;
     transition: 0.3s;
 }
 

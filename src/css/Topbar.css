@@ -1,3 +1,43 @@
+@media(max-width:500px){
+
+    .tituloTopBar {
+        background: url('../assets/img/logoAsociacionN.png') center no-repeat;
+        background-size: 75px;
+        height: 75px;
+        width: 75px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .tituloTopBarN{
+        background: url('../assets/img/logoAsocioacion.png') center no-repeat;
+        background-size: 75px;
+        height: 75px;
+        width: 75px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+}
+@media(min-width:501px){
+
+    .tituloTopBar {
+        background: url('../assets/img/Logo_Blanc_A_contracorrent.png') center no-repeat;
+        background-size: 350px;
+        height: 100%;
+        width: 350px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .tituloTopBarN{
+        background: url('../assets/img/Logo_Principal_A_contracorrent.png') center no-repeat;
+        background-size: 350px;
+        height: 100%;
+        width: 350px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+}
 .topBar{
     width: 100%;
     height: 100px;
@@ -28,7 +68,7 @@
     z-index: 20;
     transition: 0.3s;
 }
-
+/* 
 .tituloTopBar {
     background: url('../assets/img/Logo_Blanc_A_contracorrent.png') center no-repeat;
     background-size: 350px;
@@ -44,7 +84,7 @@
     width: 350px;
     cursor: pointer;
     transition: 0.3s;
-}
+} */
 
 .marcoBtnNav{
     height: 100%;

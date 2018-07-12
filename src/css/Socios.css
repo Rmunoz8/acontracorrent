@@ -10,39 +10,49 @@
     font-size: 3em;
     padding: 10px;
     flex-direction: column;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
 }
 
 .marcoRosa{
     background-color: var(--secondColor);
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    font-size: 4em;
 }
 
 .tituloMarcoVerde{
     height: 0%;
-    margin-top: -90px;
+    margin-top: -50px;
     font-weight: bolder;
-    font-size: 3.5em;
+    font-size: 2em;
+    color: black;
+}
+.tituloMarcoRosa{
+    height: 0%;
+    margin-top: -50px;
+    font-weight: bolder;
     color: black;
 }
 
 .infoMarcoVerde{
+    margin-top: 60px;
     width: 100%;
     height: 80%;
-    font-size: 2em;
+    font-size: 0.8em;
     /* background-color: rgb(108, 143, 143); */
     display: flex;
     align-items: flex-end;
+    text-align: center;
 }
 
 .resaltarMarcoVerde{
-    font-size: 2.5em;
+    font-size: 0.9em;
     font-weight: bolder;
 }
 
 .resaltarMarcoRosa{
-    font-size: 5em;
+    font-size: 4em;
     font-weight: bolder;
     color: black;
 }
@@ -58,4 +68,18 @@
 .resaltarInformateSocio{
     font-size: 4em;
     font-family: 'Amatic SC';
+}
+
+
+.socioParalax{
+    /* The image used */
+    background-image: url("../assets/img/socio.png");
+    /* Set a specific height */
+    min-height: 500px; 
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }

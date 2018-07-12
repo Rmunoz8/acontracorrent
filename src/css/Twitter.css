@@ -1,0 +1,149 @@
+@media(max-width: 360px){
+    .flechaTwitter{
+        position: fixed;
+        background-color: var(--auxiliarColor);
+        height: 0px;
+        width: 0px;
+        top: 40%;
+        left:100%;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 2;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition: 0.5s;
+    }
+    .flechaInsta{
+        position: fixed;
+        background-color: var(--auxiliarColor);
+        height: 0px;
+        width: 0px;
+        top: 40%;
+        left:100%;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 2;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition: 0.5s;
+    }
+    .flechaFacebook{
+        position: fixed;
+        background-color: var(--auxiliarColor);
+        height: 0px;
+        width: 0px;
+        top: 40%;
+        left:100%;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 2;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition: 0.5s;
+    }
+}
+
+@media(min-width: 361px){
+    .zonaTL, .zonaPage, .zonaInsta{
+        background-color: #636363;
+        padding: 10px;
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-self: flex-end;
+        /* box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5); */
+        /* border-radius: 12px; */
+        position: fixed;
+        top: 20%;
+        z-index: 0;
+        left:100%;
+        transition: 0.5s;
+    }
+
+
+    .flechaTwitter, .flechaFacebook, .flechaInsta{
+        position: fixed;
+        /* background-color: #636363; */
+        height: 100px;
+        width: 100px;
+        top: 40%;
+        left: calc(100% - 50px);
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 2;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition: 0.5s;
+    }
+
+    .flechaFacebook{
+        top:34%;
+        z-index: -1;
+    }
+    .flechaInsta{
+        top:46%;
+        z-index: -1;
+    }
+
+    .marcoTl{
+        z-index: 9;
+        height: auto;
+        width: auto;
+    }
+
+
+    .iconoTL{
+        background: url(../assets/icons/twitter-logo-buttonGreen.svg) center no-repeat;
+        background-size: 40px;
+        height: 40px;
+        width: 40px;
+        margin-left: 5px;
+        transition: 0.2s;
+        transform: rotate(0deg);
+        perspective: 1000;
+    }
+    .iconoFace{
+        background: url(../assets/icons/facebook-logo-buttoGreen.svg) center no-repeat;
+        background-size: 40px;
+        height: 40px;
+        width: 40px;
+        margin-left: 5px;
+        transition: 0.2s;
+        transform: rotate(0deg);
+        perspective: 1000;
+    }
+
+    .iconoInsta{
+        background: url(../assets/icons/instagram-logoGreen.svg) center no-repeat;
+        background-size: 40px;
+        height: 40px;
+        width: 40px;
+        margin-left: 5px;
+        transition: 0.2s;
+        transform: rotate(0deg);
+        perspective: 1000;
+    }
+
+    .flechaTwitter:hover > .iconoTL{
+        transform: scale(1.5) rotate(-25deg);
+        /* transform: rotateY(360deg); */
+        /* background: url(../assets/icons/twitter-logo-buttonRosa.svg) center no-repeat; */
+    }
+    .flechaFacebook:hover > .iconoFace{
+        transform: scale(1.5) rotate(-25deg);
+        /* transform: rotateY(360deg); */
+        /* background: url(../assets/icons/facebook-logo-buttonRosa.svg) center no-repeat; */
+    }
+    .flechaInsta:hover > .iconoInsta{
+        transform: scale(1.5) rotate(-25deg);
+        /* transform: rotateY(360deg); */
+        /* background: url(../assets/icons/facebook-logo-buttonRosa.svg) center no-repeat; */
+    }
+}
+

@@ -24,12 +24,10 @@
 
 .voluntariosParalax{
     /* The image used */
-    background-image: url("../assets/img/carrusel4.jpeg");
-
+    background-image: url("../assets/img/voluntarios.png");
     /* Set a specific height */
-    min-height: 300px; 
+    min-height: 500px; 
     width: 100%;
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -84,7 +82,7 @@ span{
 } */
 
 .infoInicialVoluntario{
-    margin-top: 0px;
+    margin-top: 50px;
     justify-content: center;
     align-self: center;
 }

@@ -1,14 +1,102 @@
-.footer {
-    left: 0;
-    bottom: 0px;
-    width: 100%;
-    background-image: linear-gradient(to right bottom, #636363, #525252, #424242, #323232, #232323);
-    height: 300px;
-    padding: 20px;
-    display: flex;
-    /* box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4); */
-    flex-direction: column;
-    color: #fff;
+@media(max-width:500px){
+    .patro1{
+    height: 100%;
+    width: 33%;
+    background: url('../assets/img/logo\ aula\ universitaria.png') no-repeat center;
+    background-size: 120px;
+    }
+    .patro2{
+        height: 100%;
+        width: 33%;
+        background: url('../assets/img/logo\ el\ cantero\ de\ letur.png') no-repeat center;
+        background-size: 120px;
+    }
+    .patro3{
+        height: 100%;
+        width: 33%;
+        background: url('../assets/img/logo ortoprono.png') no-repeat center;
+        background-size: 120px;
+    }
+    .footer {
+        left: 0;
+        bottom: 0px;
+        width: 100%;
+        background-image: linear-gradient(to right bottom, #636363, #525252, #424242, #323232, #232323);
+        height: 300px;
+        /* padding: 20px; */
+        display: flex;
+        /* box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4); */
+        flex-direction: column;
+        color: #fff;
+    }
+}
+
+@media(min-width:500px){
+@media(max-width:800px){
+    .patro1{
+    height: 100%;
+    width: 33%;
+    background: url('../assets/img/logo\ aula\ universitaria.png') no-repeat center;
+    background-size: 200px;
+    }
+    .patro2{
+        height: 100%;
+        width: 33%;
+        background: url('../assets/img/logo\ el\ cantero\ de\ letur.png') no-repeat center;
+        background-size: 200px;
+    }
+    .patro3{
+        height: 100%;
+        width: 33%;
+        background: url('../assets/img/logo ortoprono.png') no-repeat center;
+        background-size: 200px;
+    }
+    .footer {
+        left: 0;
+        bottom: 0px;
+        width: 100%;
+        background-image: linear-gradient(to right bottom, #636363, #525252, #424242, #323232, #232323);
+        height: 300px;
+        /* padding: 20px; */
+        display: flex;
+        /* box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4); */
+        flex-direction: column;
+        color: #fff;
+    }
+}
+
+@media(min-width:800px){
+    .patro1{
+        height: 100%;
+        width: 33%;
+        background: url('../assets/img/logo\ aula\ universitaria.png') no-repeat center;
+        background-size: 250px;
+    }
+    .patro2{
+            height: 100%;
+            width: 33%;
+            background: url('../assets/img/logo\ el\ cantero\ de\ letur.png') no-repeat center;
+            background-size: 300px;
+    }
+    .patro3{
+            height: 100%;
+            width: 33%;
+            background: url('../assets/img/logo ortoprono.png') no-repeat center;
+            background-size: 300px;
+    }
+    .footer {
+            left: 0;
+            bottom: 0px;
+            width: 100%;
+            background-image: linear-gradient(to right bottom, #636363, #525252, #424242, #323232, #232323);
+            height: 300px;
+            padding: 20px;
+            display: flex;
+            /* box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4); */
+            flex-direction: column;
+            color: #fff;
+    }
+}
 }
 
 .zonaContacto{
@@ -70,7 +158,7 @@
     align-items: flex-end;
 }
 
-.patro1{
+/* .patro1{
     height: 100%;
     width: 33%;
     background: url('../assets/img/logo\ aula\ universitaria.png') no-repeat center;
@@ -87,7 +175,7 @@
     width: 33%;
     background: url('../assets/img/logo ortoprono.png') no-repeat center;
     background-size: 300px;
-}
+} */
 
 .colaboradoresTitle{
     color: #fff;

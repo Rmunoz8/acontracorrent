@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import ReactTooltip from 'react-tooltip';
 
 import '../css/SubirScroll.css';
@@ -11,6 +10,21 @@ class SubirScroll extends Component {
     }
 
     render() {
+
+        try {
+            let boton = document.querySelector('.marcoScroll');
+            console.log(`Scroll->${this.props.scroll}`);
+            
+            if (this.props.scroll >= 400) {
+                boton.style.right = '50px';
+            } else {
+                boton.style.right = '-55px';
+            }
+
+        } catch (error) {
+
+        }
+
         return (
             <div className='marcoScroll' data-tip="Volver al principio" onClick={()=>{
                 this.props.subirScroll();
