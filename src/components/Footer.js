@@ -15,11 +15,10 @@ class Footer extends Component {
                 </div>
             </div>
                 <div className='zonaContacto'>
-                    <div className='imgContacto'></div>
                     <div className='bloqueContacto'>
-                        <div className='tituloContacto'>CONTACTANOS</div>
+                        {/* <div className='tituloContacto'>CONTACTANOS</div> */}
                         <div className='datosContacto'>
-                            <div>Email: info.acontracorrentasociacion@gmail.com</div>
+                            <div>Email: info@acontracorrent.es</div>
                             <div>Teléfono:  687635043  /  687084621</div>
                         </div>
                     </div>

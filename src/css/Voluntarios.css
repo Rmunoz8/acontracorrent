@@ -24,7 +24,7 @@
 
 .voluntariosParalax{
     /* The image used */
-    background-image: url("../assets/img/voluntarios.png");
+    background-image: url("../assets/img/graciasVoluntarios.png");
     /* Set a specific height */
     min-height: 500px; 
     width: 100%;
@@ -41,10 +41,10 @@ span{
     cursor: pointer;
 }
 
-.resaltar{
-    margin-top: 10px;
-    font-size: 1.3em;
-    font-weight: bold;
+
+.resaltar:hover{
+    transform: scale(1.05);
+    color: var(--mainColor);
 }
 
 .contenedorTexto{
@@ -81,12 +81,6 @@ span{
   transform: skewY(-5deg);
 } */
 
-.infoInicialVoluntario{
-    margin-top: 50px;
-    justify-content: center;
-    align-self: center;
-}
-
 .tituloVoluntario{
     width: 100%;
     font-size: 2.5em;
@@ -105,4 +99,21 @@ span{
     align-self: center;
     justify-content: center;
     align-items: center;
+}
+
+.bloqueInfo{
+    margin-top: 15px;
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.zonaInfo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }

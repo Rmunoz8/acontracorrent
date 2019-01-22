@@ -26,7 +26,7 @@ class Menu extends Component {
                                          <div className='optDropActividades' onClick={()=>{
                                             this.optSeleccionada('futbol');
                                             }} >
-                                            <div className='franjaMenu'>FRAME.FOOTBALL</div></div>
+                                    <div className='franjaMenu'>Fútbol.adaptado</div></div>
                                          {/* <div className='optDropActividades'><div className='franjaMenu'>ESCALADA</div></div>
                                          <div className='optDropActividades'><div className='franjaMenu'>JUDO</div></div> */}
                                     </div>
@@ -80,6 +80,9 @@ class Menu extends Component {
                         <div className='optNav' onClick={()=>{
                             this.optSeleccionada('contactanos');
                         }} ><div className='optNavTitulo' >CONTÁCTANOS</div></div>
+                        <div className='optNav' onClick={()=>{
+                            this.optSeleccionada('blog');
+                        }} ><div className='optNavTitulo' >BLOG</div></div>
                     </div>
                     {contenidoDropBox}
                 </div>
@@ -98,29 +101,43 @@ class Menu extends Component {
 
         let seleccionador = document.querySelector('.identSelectMenu');
         this.props.changeNav(`#${select}`);
+        let dropBox = document.querySelector('.zonaOptDropMenu');
         switch (select) {
             case 'principal':
                 seleccionador.style.marginTop = '0px';
-                var dropBox = document.querySelector('.zonaOptDropMenu').style.opacity = '0';
+                dropBox.style.display = 'none';
+                dropBox.style.opacity = '0'
                 setTimeout(() => {
                     this.props.accionMenu();
                 }, 500);
                 break;
             case 'actividades':
                 seleccionador.style.marginTop = '61px';
-                var dropBox = document.querySelector('.zonaOptDropMenu').style.opacity = '1';
+                dropBox.style.display = 'flex';
+                dropBox.style.opacity = '1'
 
                 break;
             case 'colabora':
                 seleccionador.style.marginTop = '122px';
-                var dropBox = document.querySelector('.zonaOptDropMenu').style.opacity = '1';
+                dropBox.style.display = 'flex';
+                dropBox.style.opacity = '1'
                 
                 break;
             case 'contactanos':
                 seleccionador.style.marginTop = '183px';
-                var dropBox = document.querySelector('.zonaOptDropMenu').style.opacity = '0';
+                dropBox.style.display = 'none';
+                dropBox.style.opacity = '0'
                 setTimeout(() => {
                     this.props.accionMenu();
+                }, 500);
+                
+                break;
+            case 'blog':
+                seleccionador.style.marginTop = '244px';
+                dropBox.style.display = 'none';
+                dropBox.style.opacity = '0'
+                setTimeout(() => {
+                    window.open('https://acontracorrent701203868.wordpress.com/');
                 }, 500);
                 
                 break;
@@ -129,7 +146,8 @@ class Menu extends Component {
                 setTimeout(() => {
                     this.props.accionMenu();
                 }, 500);
-                var dropBox = document.querySelector('.zonaOptDropMenu').style.opacity = '0';
+                dropBox.style.opacity = '0';
+                dropBox.style.display = 'none';
                 break;
         }
 

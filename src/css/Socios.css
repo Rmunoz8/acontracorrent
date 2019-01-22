@@ -51,17 +51,11 @@
     font-weight: bolder;
 }
 
-.resaltarMarcoRosa{
-    font-size: 4em;
-    font-weight: bolder;
-    color: black;
-}
-
 .zonaMarcosSocios{
     margin-top: 100px;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 

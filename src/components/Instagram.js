@@ -19,12 +19,15 @@ class Instagram extends Component {
             <div className='zonaInsta'>
                 <div className='martoTl'>
                     <InstagramEmbed
-                        url='https://www.instagram.com/p/BkvWMGQh14c/?utm_source=ig_web_copy_link'
+                        url='https://instagr.am/p/Zw9o4/'
                         maxWidth={320}
-                        hideCaption
+                        hideCaption={false}
                         containerTagName='div'
+                        injectScript
+                        protocol=''
                         onLoading={() => { }}
                         onSuccess={() => { }}
+                        onAfterRender={() => { }}
                         onFailure={() => { }}
                     />
                 </div>

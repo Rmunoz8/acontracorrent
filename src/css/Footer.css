@@ -21,11 +21,16 @@
         left: 0;
         bottom: 0px;
         width: 100%;
+        background-image: -webkit-gradient(linear, left top, right bottom, from(#636363), color-stop(#525252), color-stop(#424242), color-stop(#323232), to(#232323));
+        background-image: -webkit-linear-gradient(left top, #636363, #525252, #424242, #323232, #232323);
+        background-image: -o-linear-gradient(left top, #636363, #525252, #424242, #323232, #232323);
         background-image: linear-gradient(to right bottom, #636363, #525252, #424242, #323232, #232323);
-        height: 300px;
-        /* padding: 20px; */
+        height: auto;
+        display: -ms-flexbox;
         display: flex;
+        padding-top: 20px;
         /* box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4); */
+        -ms-flex-direction: column;
         flex-direction: column;
         color: #fff;
     }
@@ -55,13 +60,37 @@
         left: 0;
         bottom: 0px;
         width: 100%;
+        background-image: -webkit-gradient(linear, left top, right bottom, from(#636363), color-stop(#525252), color-stop(#424242), color-stop(#323232), to(#232323));
+        background-image: -webkit-linear-gradient(left top, #636363, #525252, #424242, #323232, #232323);
+        background-image: -o-linear-gradient(left top, #636363, #525252, #424242, #323232, #232323);
         background-image: linear-gradient(to right bottom, #636363, #525252, #424242, #323232, #232323);
-        height: 300px;
-        /* padding: 20px; */
+        height: auto;
+        /* height: 300px; */
+        padding-top: 20px;
+        display: -ms-flexbox;
         display: flex;
         /* box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4); */
+        -ms-flex-direction: column;
         flex-direction: column;
         color: #fff;
+    }
+}
+
+@media(max-width:1500){
+    .imgContacto{
+        height: 10px;
+        width: 10px;
+        background: url('../assets/img/Logo_Principal_A_contracorrent.png')center no-repeat;
+        background-size: 0%;
+    }
+}
+
+@media(min-width:1500){
+    .imgContacto{
+        height: 100px;
+        width: 350px;
+        background: url('../assets/img/Logo_Principal_A_contracorrent.png')center no-repeat;
+        background-size: cover;
     }
 }
 
@@ -85,24 +114,31 @@
             background-size: 300px;
     }
     .footer {
-            left: 0;
-            bottom: 0px;
-            width: 100%;
-            background-image: linear-gradient(to right bottom, #636363, #525252, #424242, #323232, #232323);
-            height: 300px;
-            padding: 20px;
-            display: flex;
-            /* box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4); */
-            flex-direction: column;
-            color: #fff;
+        left: 0;
+        bottom: 0px;
+        width: 100%;
+        background-image: -webkit-gradient(linear, left top, right bottom, from(#636363), color-stop(#525252), color-stop(#424242), color-stop(#323232), to(#232323));
+        background-image: -webkit-linear-gradient(left top, #636363, #525252, #424242, #323232, #232323);
+        background-image: -o-linear-gradient(left top, #636363, #525252, #424242, #323232, #232323);
+        background-image: linear-gradient(to right bottom, #636363, #525252, #424242, #323232, #232323);
+        height: auto;
+        /* height: 300px; */
+        padding-top: 20px;
+        display: -ms-flexbox;
+        display: flex;
+        /* box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.4); */
+        -ms-flex-direction: column;
+        flex-direction: column;
+        color: #fff;
     }
 }
 }
 
 .zonaContacto{
-    height: 110px;
+    height: auto;
     width: 100%;
-    /* background-color: red; */
+    background-color: #232323;
+    display: -ms-flexbox;
     display: flex;
     align-items: center;
 }
@@ -123,27 +159,29 @@
 }
 
 .datosContacto{
-    width: 60%;
+    width: 100%;
     font-size: 1.1em;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-between;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .bloqueContacto{
     height: auto;
-    width: 90%;
+    width: 100%;
     padding: 10px;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     color: #fff;
 }
 
-.imgContacto{
-    height: 100px;
-    width: 350px;
-    background: url('../assets/img/Logo_Principal_A_contracorrent.png')center no-repeat;
-    background-size: cover;
-}
 
 .zonaAgradecimientos{
     height: 100%;

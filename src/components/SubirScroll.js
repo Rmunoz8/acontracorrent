@@ -12,9 +12,7 @@ class SubirScroll extends Component {
     render() {
 
         try {
-            let boton = document.querySelector('.marcoScroll');
-            console.log(`Scroll->${this.props.scroll}`);
-            
+            let boton = document.querySelector('.marcoScroll');            
             if (this.props.scroll >= 400) {
                 boton.style.right = '50px';
             } else {

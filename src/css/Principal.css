@@ -10,50 +10,119 @@
     margin-bottom: 100px;
 }
 
-.zonaPosts{
-    margin-top: 50px;
-    width: 95%;
-    height: auto;
-    /* background-color: aqua; */
-    margin-bottom: 250px;
-    display: flex;
-    flex-direction: column;
-}
-
-.infoInicial,
-.infoInicialVoluntario{
-    margin-top: 40px;
-    width: 50%;
-    /* min-width: 550px; */
-    padding: 10px;
-    text-align: center;
-    font-family: 'Amatic SC',
-    cursive;
-    font-size: 2em;
-    font-weight: 500;
+.post,
+.post2,
+.post3,
+.post4,
+.post5,
+.post6{
+    height: 345px;
+    width: 500px;
+    max-width: 500px;
+    transition: 0.3s;
 }
 
 .post{
-    height: 300px;
-    width: 500px;
-    background: url('../assets/img/noticia1.jpeg') no-repeat center;
-    background-size: 100%;
+    background: url('../assets/img/fotoVoluntarios.jpg') no-repeat center;
+    background-size: cover;
 }
 .post2{
-    height: 345px;
-    width: 500px;
     background: url('../assets/img/notifica2.jpeg') no-repeat center;
-    background-size: 100%;
+    background-size: cover;
+}
+.post3{
+    background: url('../assets/img/post3.jpeg') no-repeat center;
+    background-size: cover;
+}
+.post4{
+    background: url('../assets/img/congreso.JPG') no-repeat center;
+    background-size: cover;
+}
+.post5{
+    background: url('../assets/img/imgPostComienzo.jpeg') no-repeat center;
+    background-size: cover;
 }
 
-.marcoPosts{
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    padding: 20px;
+
+
+.post:hover,
+.post2:hover,
+.post3:hover,
+.post4:hover,
+.post5:hover{
+    background-size: 110%;
 }
+@media(max-width: 767px){
+    .marcoPosts{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 0px;
+        justify-content: center;
+    }
+    .zonaPosts{
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+        /* background-color: aqua; */
+        margin-bottom: 250px;
+        display: flex;
+        flex-direction: column;
+    } 
+}
+
+@media(min-width: 768px){
+    @media(max-width: 1024px){
+            .marcoPosts{
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            padding: 20px;
+            -ms-flex-pack: center;
+            justify-content: center;
+            max-width: 500px;
+        }
+    }
+    @media(min-width:1025px){
+        .marcoPosts{
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: start;
+            justify-content: flex-start;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            padding: 20px;
+            -ms-flex-pack: center;
+            justify-content: center;
+            max-width: 1500px;
+        }
+    }
+    .zonaPosts{
+        margin-top: 50px;
+        width: 95%;
+        height: auto;
+        /* background-color: aqua; */
+        margin-bottom: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+}
+
 
 .tituloZonaPost{
     display: flex;
@@ -250,6 +319,7 @@
 .frontMision {
     background-color: var(--mainColor);
     color: var(--auxiliarColor);
+    /* color:rgba(51, 51, 51, 0.4); */
 	z-index: 2;
     transform: rotateY(0deg);
     display: flex;
@@ -269,7 +339,7 @@
     justify-content: center;
     align-items: center;
     font-size: 4em;
-    color: #636363;
+    color: rgba(75, 75, 75, 0.4);
     font-family: 'Amatic SC';
     text-align: center;
 }

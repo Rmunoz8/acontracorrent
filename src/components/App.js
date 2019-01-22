@@ -77,7 +77,6 @@ class App extends Component {
   }
 
   cambioPantalla(){
-      console.log('Prueba');
       
   }
 
@@ -87,9 +86,7 @@ class App extends Component {
     this.setState({scroll: 0});
   }
 
-  changeContenido(valor){  
-    console.log(`Contenido${valor}`);
-     
+  changeContenido(valor){       
     this.subirScroll(); 
     this.setState({seleccionado:valor});
   }

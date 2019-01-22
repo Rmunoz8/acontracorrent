@@ -22,6 +22,7 @@ class Carrusel extends Component {
 
         return (
             <div className='marcoCarusel'>
+                <div className='imgMovil'></div>
                 <div className='marcoSlider'>
                     <div id='slider' className = 'slide1'>
                         <div className='leftArrow' onClick={this.anteriorSlide} >
@@ -108,9 +109,7 @@ class Carrusel extends Component {
                         default:
                             break;
                     }
-                } catch (error) {
-                    console.log(`Error->${error}`);
-                    
+                } catch (error) {                    
                 }
                 }, 10000);                            
 
@@ -183,8 +182,6 @@ class Carrusel extends Component {
                     break;
             }
         } catch (error) {
-            console.log(`Error->${error}`);
-
         }
     }
     anteriorSlide(){
@@ -252,15 +249,10 @@ class Carrusel extends Component {
                     break;
             }
         } catch (error) {
-            console.log(`Error->${error}`);
-
         }
     }
 
-    cambiarSlide(nuevoSlider, nuevoBtn){
-
-        console.log(`nuevoSlider->${nuevoSlider}  nuevoBtn->${nuevoBtn}`);
-        
+    cambiarSlide(nuevoSlider, nuevoBtn){        
 
         let slider = this.state.slide;
         let sliderDelete;

@@ -13,7 +13,7 @@ class Contacto extends Component {
             <div className='marcoContacto'>
                 <div className='contactoParalax'></div>  
                 <div className='zonaTextContacto'>
-                    <div className='zonaCorreo'>Email: info.acontracorrentasociacion@gmail.com</div>
+                    <div className='zonaCorreo'>Email: info@acontracorrent.es</div>
                     <div className='zonaTel'>Teléfono: 687635043 / 687084621</div>
                 </div>
                 {/* <div className='zonaTL'>

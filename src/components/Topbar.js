@@ -18,9 +18,7 @@ class Torbar extends Component {
     try {
       // let padre = document.querySelector('#App');
       let ancho = window.offsetWidth;
-      console.log(`Ancho->${ancho}`);
     } catch (error) {
-      console.log(error);
 
     }
 
@@ -85,11 +83,7 @@ class Torbar extends Component {
 
   accionMenu(){
 
-    let ancho = document.querySelector('.App').offsetWidth;
-
-    console.log(`Ancho ${ancho}`);
-    
-
+    let ancho = document.querySelector('.App').offsetWidth;    
 
     let menuApp = document.querySelector('.marcoMenu');
     let menuImg = document.querySelector('.imgMenu');

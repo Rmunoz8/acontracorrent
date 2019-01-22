@@ -9,17 +9,17 @@ class Voluntarios extends Component {
             <div className='marcoVoluntarios'>
                 <div className='tituloFutbol'>COLABORA CON NOSOTROS</div> 
                 <div className='socioParalax'></div>                
-                <div className='infoInicialVoluntario'>Hazte  socio  de  A  Contracorrent  Esport  Adaptat.  ¡Te  esperamos!  Forma  parte  de  este  magnífico  club <div className='resaltar' > ¡Disfruta  y  haz  deporte  con  nosotros!</div> </div>
+                <div className='infoInicialVoluntario'>Hazte socio de A Contracorrent Esport Adaptat. Forma parte de este magnífico club, ¡Te esperamos!<div className='resaltarSocio'> ¡Disfruta  y  haz  deporte  con  nosotros!</div> </div>
+                <div className='resaltarInformateSocio'>¡INFÓRMATE!</div>
                 <div className='zonaMarcosSocios'>
                     <div className='marcoVerde'>
                         <div className='tituloMarcoVerde'>Socio  0#</div>
-                        <div className='infoMarcoVerde'>(Si  quieres  colaborar  como  socio  pero  no  va  a  participar  en  las  actividades  que  se  ofrecen,  puedes  hacerte  socio  con  una  cuota  mínima)</div>
-                        <div className='resaltarMarcoVerde'>cuota  mínima 8€/mes  </div>
+                        <div className='infoMarcoVerde'>Si quieres colaborar como socio pero no puedes participar en las actividades que ofrecemos, ¡hazte socio!</div>
+                        <div className='resaltarMarcoVerde'>Cuota  mínima 8€/mes  </div>
                     </div>
-                    <div className='resaltarInformateSocio'>¡INFORMATE!</div>
                     <div className='marcoRosa'>
                         <div className='tituloMarcoRosa'>Socio  Deportivo</div>
-                        <div className='resaltarMarcoRosa'>15€!</div>
+                        <div className='resaltarMarcoRosa'>15€/mes!</div>
                     </div>
                 </div>
             </div>
